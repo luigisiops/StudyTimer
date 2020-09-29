@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" initial-scale='1.0' maximum-scale='1.0'>
         <link rel="stylesheet" href="styles.css">
         <meta name="keywords" content="Timer, Stopwatch, Pomodoro">
         <meta name="description" content="Study timer with built in breaks">
+        <link href="https://fonts.googleapis.com/css2?family=Denk+One&display=swap" rel="stylesheet">
         <title>Study Timer</title>
     </head>
     <body>
-        <nav>
-            <!--left sidebar or top menu?-->
-        </nav>
+        <header>
+            <h1>Study Timer</h1>
+                <!--reporting and other options here if we implement-->
+        </header>
         <main>
-            <!--main timer container and buttons: main timer, short break, long break, start-->
-            <!--tasks: list of tasks, add task button-->
+            <article>
+                <div class="timerContainer">
+                    <nav class="timerNav">
+                        <button id="timerButton">Timer</button>
+                        <button id="short">Short Break</button>
+                        <button id="long">Long Break</button>
+                    </nav>
+                    <h1>TIME</h1>
+                    <button>Start</button>
+
+                </div>
+            </article>
+            <div id="tasks">
+                <h3>Tasks</h3>
+                <nav id="enterTasks">
+                    <h3>Enter Task:</h3>
+                    <input type="text" id="taskTitleInput">
+                    <button id="addTask">Add</button>
+                </nav>
+            </div>
         </main>
         <script src = "app.js"></script>
     </body>

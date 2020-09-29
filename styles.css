@@ -5,3 +5,66 @@
     }
 
 /* minimalist, mostly or completely transparent main container, background changes with button clicking
+starter color palette: #1F7A8C (fails one, use a thick font), #053C5E, #A31621 and white text */
+
+html {
+    color: white;
+    background-color: #1F7A8C;
+    font-family: 'Denk One', sans-serif;
+}
+
+h1 {
+    padding: 50px;
+    text-align: center;
+    font-size: 4em;
+}
+
+header {
+    margin: auto;
+}
+
+.timerContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(27, 109, 126, .3);
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.timerNav {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+button {
+    padding: 10px;
+    margin: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'Denk One', sans-serif;
+    font-size: 1em;
+}
+
+.timerContainer > button {
+    margin: auto;
+}
+
+#tasks {
+    text-align: center;
+}
+
+#enterTasks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#enterTasks h3 {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
